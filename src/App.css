@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Mulish:wght@400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
+
+
 .page {
 	background: url(cloudy2.jpg);
     /* background-repeat: no-repeat; */
@@ -10,14 +12,21 @@
 	height: 736px;
     margin: auto;
     border: 2px solid black;
+    margin-bottom: -3000px;
 }
 
 .navbar {
     position: relative;
+    top: -754px;
     width: 414px;
 	height: 65px;
     background-color: #ffffff;
     color: black;
+}
+
+.box {
+    position: relative;
+    top: -30px;
 }
 
 .home {
@@ -53,10 +62,11 @@
     margin-bottom: 5px;
 }
 
-/* .datediv {
-    text-align: center;
+.datediv {
+    position: relative;
+    top: -10px;
 }
-
+/*
 .datediv p{
     display: inline-block;
     margin: auto;
@@ -132,6 +142,7 @@
     position: relative;
     top: -680px;
     left: 250px;
+    overflow: hidden
 }
 
 .tempdesc {
@@ -146,9 +157,10 @@
     left: 200px;
 }
 
-/* .circlediv {
-    text-align: center;
-} */
+.circlediv {
+    position: relative;
+    top: -60px;
+}
 
 .dot {
     position: relative;
@@ -237,6 +249,8 @@
     /* justify-content: space-between 2000px; */
 }
 .tiles {
+    position: relative;
+    top: -780px;
     background-color: rgba(255, 255, 255, 0.39);
     display: table;
     border-collapse: collapse;
@@ -252,6 +266,7 @@
     font-weight: bold;
     font-size: 18px;
     font-family: 'Mulish', sans-serif;
+    
 }
 
 

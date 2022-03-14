@@ -13,6 +13,8 @@ export default function App() {
       <Currentemp />
       <Circles />
       <Tiles />
+      <Tiles />
+      <Tiles />
       <Navbar />
     </div>
   )

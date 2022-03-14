@@ -5,10 +5,12 @@ import cloudicon from './cloudicon.png'
 export default function Currentemp() {
   return (
     <div>
-        <p className='tempnum'>8</p>
-        <p className='tempdeg'>°C</p>
-        <img className='tempicon' src={cloudicon} alt="cloudicon" />
-        <p className='tempdesc'>Cloudy</p>
+        <div className='box'>
+          <p className='tempnum'>8</p>
+          <p className='tempdeg'>°C</p>
+          <img className='tempicon' src={cloudicon} alt="cloudicon" />
+          <p className='tempdesc'>Cloudy</p>
+        </div>
     </div>
   )
 }
