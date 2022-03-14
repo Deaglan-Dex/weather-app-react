@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Mulish:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
 .page {
 	background: url(cloudy2.jpg);
@@ -235,3 +236,54 @@
     display: flex;
     /* justify-content: space-between 2000px; */
 }
+.tiles {
+    background-color: rgba(255, 255, 255, 0.39);
+    display: table;
+    border-collapse: collapse;
+    table-layout: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 92%;
+    height: 66px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 13px;
+    font-family: 'Mulish';
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Mulish', sans-serif;
+}
+
+
+/* test code -----------------
+.tiles {
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+*/
+.tdate, .ticon, .ttemp {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+/*
+.ticon {
+    width: 50%;
+}
+*/
+
+
+.ticon {
+    text-align: center;
+    
+}
+
+.ticon img {
+    width: 45px;
+    height: 45px;
+    margin: 0;
+}
+

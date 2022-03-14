@@ -3,6 +3,7 @@ import Todate from './Todate'
 import Currentemp from './Currentemp'
 import Circles from './Circles'
 import Navbar from './Navbar'
+import Tiles from './Tiles'
 import "./App.css"
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
       <Todate />
       <Currentemp />
       <Circles />
+      <Tiles />
       <Navbar />
     </div>
   )
