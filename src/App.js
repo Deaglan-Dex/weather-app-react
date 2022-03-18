@@ -4,6 +4,7 @@ import Currentemp from './Currentemp'
 import Circles from './Circles'
 import Navbar from './Navbar'
 import Tiles from './Tiles'
+import Location from './Location'
 import "./App.css"
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
       <Tiles />
       <Tiles />
       <Tiles />
+      <Location />
       <Navbar />
     </div>
   )

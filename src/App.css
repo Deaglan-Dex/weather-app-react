@@ -1,32 +1,32 @@
+/* GENERAL */
+
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Mulish:wght@400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
-
+* {
+    margin: 0;
+}
 
 .page {
 	background: url(cloudy2.jpg);
-    /* background-repeat: no-repeat; */
     background-size: 414px 736px;
 	width: 414px;
 	height: 736px;
     margin: auto;
     border: 2px solid black;
-    margin-bottom: -3000px;
 }
+
+/* NAVBAR.JS */
 
 .navbar {
     position: relative;
-    top: -754px;
+    /* top: -100px; */
     width: 414px;
 	height: 65px;
     background-color: #ffffff;
     color: black;
-}
-
-.box {
-    position: relative;
-    top: -30px;
+    bottom: 0px;
 }
 
 .home {
@@ -62,60 +62,64 @@
     margin-bottom: 5px;
 }
 
+/* TODATE.JS */
+
 .datediv {
     position: relative;
-    top: -10px;
+    left: 75px;
+    top: 20px;
 }
-/*
-.datediv p{
-    display: inline-block;
-    margin: auto;
-}
-
-.smalldate {
-    font-family: "Mulish";
-    font-size: 36px;
-    font-weight: 900;
-    letter-spacing: 0.5px;
-}
-
-.bigdate {
-    font-family: "Mulish";
-    font-size: 60px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    padding-left: 20px;
-    padding-right: 20px;
-} */
 
 .smalldate1 {
     position: relative;
-    top: 22px;
-    left: 70px;
+    /* top: 22px; */
+    /* left: 70px; */
     font-family: "Mulish";
     font-size: 36px;
     font-weight: 900;
     letter-spacing: 0.5px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .bigdate {
     position: relative;
-    top: -108px;
-    left: 139px;
+    /* top: -108px; */
+    /* left: 139px; */
     font-family: "Mulish";
     font-size: 64px;
     font-weight: normal;
     letter-spacing: 0.5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .smalldate2 {
     position: relative;
-    top: -230px;
-    left: 290px;
+    /* top: -230px; */
+    /* left: 290px; */
     font-family: "Mulish";
     font-size: 36px;
     font-weight: 900;
     letter-spacing: 0.5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* CURRENTEMP.JS */
+
+.box {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+}
+
+.inline {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
 }
 
 .tempnum {
@@ -123,9 +127,11 @@
     font-size: 144px;
     font-weight: 400;
     position: relative;
-    top: -320px;
+    top: 0px;
     left: 60px;
     letter-spacing: -0.33px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .tempdeg {
@@ -133,15 +139,17 @@
     font-size: 36px;
     font-weight: 400;
     position: relative;
-    top: -610px;
-    left: 135px;
+    top: 10px;
+    left: 50px;
     letter-spacing: -0.33px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .tempicon {
     position: relative;
-    top: -680px;
-    left: 250px;
+    padding-top: 20px;
+    left: 120px;
     overflow: hidden
 }
 
@@ -153,18 +161,20 @@
     color: #515151;
     letter-spacing: -0.33px;
     position: relative;
-    top: -720px;
-    left: 200px;
+    padding-top: 10px;
+    left: 70px;
 }
+
+/* CIRCLES.JS */
 
 .circlediv {
     position: relative;
-    top: -60px;
+    margin-bottom: 20px;
 }
 
 .dot {
     position: relative;
-    top: -720px;
+    /* top: -720px; */
     left: 50px;
     height: 80px;
     width: 80px;
@@ -175,7 +185,7 @@
 
 .dot2 {
     position: relative;
-    top: -720px;
+    /* top: -720px; */
     left: 50px;
     height: 80px;
     width: 80px;
@@ -195,7 +205,7 @@
 .txt {
     font-family: "Mulish";
     position: relative;
-    top: -10px;
+    top: 5px;
     left: 23px;
     font-weight: 400;
 }
@@ -203,7 +213,7 @@
 .txt2 {
     font-family: "Mulish";
     position: relative;
-    top: -10px;
+    top: 5px;
     left: 12px;
     font-weight: 400;
 }
@@ -211,7 +221,7 @@
 .circletxt {
     font-family: "Mulish";
     position: relative;
-    top: -730px;
+    /* top: -730px; */
     left: 42px;
     font-weight: 400;
 }
@@ -219,7 +229,7 @@
 .circletxt2 {
     font-family: "Mulish";
     position: relative;
-    top: -730px;
+    /* top: -730px; */
     left: 60px;
     font-weight: 400;
 }
@@ -227,11 +237,10 @@
 .circletxt3 {
     font-family: "Mulish";
     position: relative;
-    top: -730px;
+    /* top: -730px; */
     left: 70px;
     font-weight: 400;
 }
-
 
 .circles {
     display: inline-block;
@@ -248,9 +257,12 @@
     display: flex;
     /* justify-content: space-between 2000px; */
 }
+
+/* TILES.JS */
+
 .tiles {
     position: relative;
-    top: -780px;
+    /* top: -780px; */
     background-color: rgba(255, 255, 255, 0.39);
     display: table;
     border-collapse: collapse;
@@ -261,7 +273,7 @@
     height: 66px;
     border-radius: 10px;
     margin: 0 auto;
-    margin-bottom: 13px;
+    margin-bottom: 9px;
     font-family: 'Mulish';
     font-weight: bold;
     font-size: 18px;
@@ -269,31 +281,14 @@
     
 }
 
-
-/* test code -----------------
-.tiles {
-    width: 100%;
-    display: table;
-    border-collapse: collapse;
-    table-layout: fixed;
-}
-
-*/
 .tdate, .ticon, .ttemp {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
-/*
-.ticon {
-    width: 50%;
-}
-*/
-
 
 .ticon {
-    text-align: center;
-    
+    text-align: center; 
 }
 
 .ticon img {
@@ -302,3 +297,14 @@
     margin: 0;
 }
 
+/* LOCATION.JS */
+
+.loctext {
+    font-family: "Mulish";
+    font-size: 36px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    letter-spacing: -0.33px;
+    margin-bottom: 10px;
+}

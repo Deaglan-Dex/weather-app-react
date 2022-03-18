@@ -8,9 +8,12 @@ export default function Currentemp() {
         <div className='box'>
           <p className='tempnum'>8</p>
           <p className='tempdeg'>°C</p>
+        </div>
+        <div className='inline'>
           <img className='tempicon' src={cloudicon} alt="cloudicon" />
           <p className='tempdesc'>Cloudy</p>
         </div>
+        
     </div>
   )
 }
