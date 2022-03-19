@@ -20,13 +20,13 @@
 /* NAVBAR.JS */
 
 .navbar {
-    position: relative;
+    position: absolute;
     /* top: -100px; */
     width: 414px;
 	height: 65px;
     background-color: #ffffff;
     color: black;
-    bottom: 0px;
+    bottom: -25px;
 }
 
 .home {
@@ -307,4 +307,63 @@
     text-align: center;
     letter-spacing: -0.33px;
     margin-bottom: 10px;
+}
+
+/* DAYS.JS */
+
+.sixteentxt {
+    font-family: "Mulish";
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    font-weight: 900;
+}
+
+.sixteentxt2 {
+    font-family: "Mulish";
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.line {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.dateTile {
+    position: relative;
+    background-color: #9e9c9c88;
+    width: 70px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.day {
+    position: relative;
+    text-align: center;
+    font-family: "Mulish";
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.date {
+    position: relative;
+    text-align: center;
+    font-family: "Mulish";
+    font-weight: 600;
+    font-size: 30px;
+
+}
+
+.month {
+    position: relative;
+    text-align: center;
+    font-family: "Mulish";
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 5px;
 }

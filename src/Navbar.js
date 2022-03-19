@@ -5,6 +5,9 @@ import sixteen from './sixteen.png'
 import search from './search.png'
 import notif from './notif.png'
 import burger from './burger.png'
+import {
+  Link
+} from "react-router-dom";
 
 console.log(home);
 console.log(sixteen);
@@ -15,8 +18,12 @@ console.log(burger);
 export default function Navbar() {
   return (
     <div className='navbar'>
+      <Link to="/">
         <img className='home' src={home} alt="Home" />
+      </Link>
+      <Link to="/six">
         <img className='sixteen' src={sixteen} alt="sixteen" />
+      </Link>
         <img className='search' src={search} alt="search" />
         <img className='notif' src={notif} alt="notif" />
         <img className='burger' src={burger} alt="burger" />
