@@ -121,6 +121,8 @@
     display: inline-block;
     vertical-align: top;
     margin-top: 30px;
+    text-align: center;
+    align-content: center;
 }
 
 .tempnum {
@@ -152,7 +154,7 @@
     position: relative;
     /* padding-top: 20px; */
     /* left: 120px; */
-    margin-left: 35px;
+    /* margin-left: 50px; */
     height: 80px;
     width: 80px;
 }
@@ -166,7 +168,7 @@
     letter-spacing: -0.33px;
     position: relative;
     text-align: center;
-    margin-left: 15px;
+    margin-left: 0px;
     bottom: 15px;
     /* padding-top: 10px; */
     /* left: 70px; */
@@ -229,7 +231,7 @@
     font-family: "Mulish";
     position: relative;
     /* top: -730px; */
-    left: 42px;
+    left: 50px;
     font-weight: 400;
 }
 
