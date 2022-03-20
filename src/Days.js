@@ -23,88 +23,88 @@ export default function Days() {
           <div className='line'>
             <div className='dateTile'>
                 <p className='day'>FRI</p>
-                <p className='date'>18</p>
+                <p className='datee'>18</p>
                 <p className='month'>FEB</p>
             </div>
             <div className='dateTile'>
                 <p className='day'>SAT</p>
-                <p className='date'>19</p>
+                <p className='datee'>19</p>
                 <p className='month'>FEB</p>
             </div>
             <div className='dateTile'>
                 <p className='day'>SUN</p>
-                <p className='date'>20</p>
+                <p className='datee'>20</p>
                 <p className='month'>FEB</p>
             </div>
             <div className='dateTile'>
                 <p className='day'>MON</p>
-                <p className='date'>21</p>
+                <p className='datee'>21</p>
                 <p className='month'>FEB</p>
             </div>
           </div>
           <div className='line'>
             <div className='dateTile'>
                 <p className='day'>FRI</p>
-                <p className='date'>18</p>
+                <p className='datee'>18</p>
                 <p className='month'>FEB</p>
             </div>
             <div className='dateTile'>
                 <p className='day'>SAT</p>
-                <p className='date'>19</p>
+                <p className='datee'>19</p>
                 <p className='month'>FEB</p>
             </div>
             <div className='dateTile'>
                 <p className='day'>SUN</p>
-                <p className='date'>20</p>
+                <p className='datee'>20</p>
                 <p className='month'>FEB</p>
             </div>
             <div className='dateTile'>
                 <p className='day'>MON</p>
-                <p className='date'>21</p>
+                <p className='datee'>21</p>
                 <p className='month'>FEB</p>
             </div>
           </div>
           <div className='line'>
             <div className='dateTile'>
                 <p className='day'>FRI</p>
-                <p className='date'>18</p>
+                <p className='datee'>18</p>
                 <p className='month'>FEB</p>
             </div>
             <div className='dateTile'>
                 <p className='day'>SAT</p>
-                <p className='date'>19</p>
+                <p className='datee'>19</p>
                 <p className='month'>FEB</p>
             </div>
             <div className='dateTile'>
                 <p className='day'>SUN</p>
-                <p className='date'>20</p>
+                <p className='datee'>20</p>
                 <p className='month'>FEB</p>
             </div>
             <div className='dateTile'>
                 <p className='day'>MON</p>
-                <p className='date'>21</p>
+                <p className='datee'>21</p>
                 <p className='month'>FEB</p>
             </div>
           </div>
           <div className='line'>
             <div className='dateTile'>
                 <p className='day'>FRI</p>
-                <p className='date'>18</p>
+                <p className='datee'>18</p>
                 <p className='month'>FEB</p>
             </div>
             <div className='dateTile'>
                 <p className='day'>SAT</p>
-                <p className='date'>19</p>
+                <p className='datee'>19</p>
                 <p className='month'>FEB</p>
             </div>
             <div className='dateTile'>
                 <p className='day'>SUN</p>
-                <p className='date'>20</p>
+                <p className='datee'>20</p>
                 <p className='month'>FEB</p>
             </div>
             <div className='dateTile'>
                 <p className='day'>MON</p>
-                <p className='date'>21</p>
+                <p className='datee'>21</p>
                 <p className='month'>FEB</p>
             </div>
           </div>

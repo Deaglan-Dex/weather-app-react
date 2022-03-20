@@ -66,8 +66,9 @@
 
 .datediv {
     position: relative;
-    left: 75px;
+    /* left: 75px; */
     top: 20px;
+    text-align: center;
 }
 
 .smalldate1 {
@@ -127,8 +128,9 @@
     font-size: 144px;
     font-weight: 400;
     position: relative;
-    top: 0px;
-    left: 60px;
+    /* top: 0px;
+    left: 60px; */
+    margin-left: 30px;
     letter-spacing: -0.33px;
     display: inline-block;
     vertical-align: top;
@@ -139,8 +141,8 @@
     font-size: 36px;
     font-weight: 400;
     position: relative;
-    top: 10px;
-    left: 50px;
+    /* top: 10px;
+    left: 60px; */
     letter-spacing: -0.33px;
     display: inline-block;
     vertical-align: top;
@@ -148,9 +150,11 @@
 
 .tempicon {
     position: relative;
-    padding-top: 20px;
-    left: 120px;
-    overflow: hidden
+    /* padding-top: 20px; */
+    /* left: 120px; */
+    margin-left: 35px;
+    height: 80px;
+    width: 80px;
 }
 
 .tempdesc {
@@ -161,8 +165,11 @@
     color: #515151;
     letter-spacing: -0.33px;
     position: relative;
-    padding-top: 10px;
-    left: 70px;
+    text-align: center;
+    margin-left: 15px;
+    bottom: 15px;
+    /* padding-top: 10px; */
+    /* left: 70px; */
 }
 
 /* CIRCLES.JS */
@@ -350,7 +357,7 @@
     padding-top: 5px;
 }
 
-.date {
+.datee {
     position: relative;
     text-align: center;
     font-family: "Mulish";
