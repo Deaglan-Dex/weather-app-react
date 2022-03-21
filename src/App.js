@@ -8,6 +8,7 @@ import Location from './Location'
 import Days from './Days'
 import Header from './Header'
 import "./detailsPage.css";
+import Datetimetemp from "./Datetimetemp";
 import HighLowTemps from "./HighLowTemps";
 import InfoTable from "./InfoTable";
 import TempInfo from "./TempInfo";
@@ -17,25 +18,14 @@ import "./App.css"
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Link
 } from "react-router-dom";
 
 const DetailsPage = () => {
-  const current = new Date();
-  const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
-  const time = current.getHours() + ':' + current.getMinutes();
 return (
   <div className = "detailsPage">
-      <h2 className = "date">{date}</h2>
-      <h2 className = "time">{time}</h2>
-      <div className='ahhh'>
-        <h1 className = "mainTemp">8<sup className='super'>&#176;C</sup></h1>
-      </div>
-      <HighLowTemps />
-      <Status />
-      <SunRiseSet />
-      <TempInfo />
-      <InfoTable />
+      
   </div>
 )}
 
@@ -45,12 +35,14 @@ export default function App() {
         <div className='page'>
           <Switch>
             <Route exact path='/'>
-              <Todate />
-              <Currentemp />
-              <Circles />
+              <Link to="/info?cnt=1">
+                <Todate />
+                <Currentemp />
+                <Circles />
+              </Link>
               <Tiles />
-              <Tiles />
-              <Tiles />
+              {/* <Tiles />
+              <Tiles /> */}
               <Location />
             </Route>
             <Route exact path='/six'>
@@ -58,7 +50,12 @@ export default function App() {
               <Days />
             </Route>
             <Route exact path='/info'>
-              {DetailsPage}
+              <Datetimetemp />
+              <HighLowTemps />
+              <Status />
+              <SunRiseSet />
+              <TempInfo />
+              <InfoTable />
             </Route>
           </Switch>
           <Navbar />

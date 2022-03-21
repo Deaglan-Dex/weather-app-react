@@ -6,6 +6,8 @@
 
 * {
     margin: 0;
+    color: black;
+    text-decoration: none;
 }
 
 .page {
@@ -15,6 +17,7 @@
 	height: 736px;
     margin: auto;
     border: 2px solid black;
+    position: relative;;
 }
 
 /* NAVBAR.JS */
@@ -26,7 +29,7 @@
 	height: 65px;
     background-color: #ffffff;
     color: black;
-    bottom: -25px;
+    bottom: 0px;
 }
 
 .home {
@@ -272,7 +275,7 @@
 .tiles {
     position: relative;
     /* top: -780px; */
-    background-color: rgba(255, 255, 255, 0.39);
+    background-color: #c5c4c485;
     display: table;
     border-collapse: collapse;
     table-layout: fixed;
@@ -357,6 +360,7 @@
     font-weight: 600;
     font-size: 20px;
     padding-top: 5px;
+    color: black;
 }
 
 .datee {
@@ -365,7 +369,7 @@
     font-family: "Mulish";
     font-weight: 600;
     font-size: 30px;
-
+    color: black;
 }
 
 .month {
@@ -375,4 +379,5 @@
     font-weight: 600;
     font-size: 20px;
     padding-bottom: 5px;
+    color: black;
 }
