@@ -254,6 +254,38 @@
     font-weight: 400;
 }
 
+.circletxt4 {
+    font-family: "Mulish";
+    position: relative;
+    /* top: -730px; */
+    left: 50px;
+    font-weight: 400;
+}
+
+.circletxt4 {
+    font-family: "Mulish";
+    position: relative;
+    /* top: -730px; */
+    left: 50px;
+    font-weight: 400;
+}
+
+.circletxt5 {
+    font-family: "Mulish";
+    position: relative;
+    /* top: -730px; */
+    left: 50px;
+    font-weight: 400;
+}
+
+.circletxt6 {
+    font-family: "Mulish";
+    position: relative;
+    /* top: -730px; */
+    left: 60px;
+    font-weight: 400;
+}
+
 .circles {
     display: inline-block;
 }

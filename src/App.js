@@ -22,13 +22,6 @@ import {
   Link
 } from "react-router-dom";
 
-const DetailsPage = () => {
-return (
-  <div className = "detailsPage">
-      
-  </div>
-)}
-
 export default function App() {
     return (
       <Router>
@@ -41,8 +34,6 @@ export default function App() {
                 <Circles />
               </Link>
               <Tiles />
-              {/* <Tiles />
-              <Tiles /> */}
               <Location />
             </Route>
             <Route exact path='/sixteen'>
