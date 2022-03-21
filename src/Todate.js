@@ -9,13 +9,7 @@ export default function Todate() {
   const month = `${current.getMonth()}`;
 
   var weekday=new Array(7);
-  weekday[0]="SUN";
-  weekday[1]="MON";
-  weekday[2]="TUE";
-  weekday[3]="WED";
-  weekday[4]="THU";
-  weekday[5]="FRI";
-  weekday[6]="SAT";
+  weekday = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
   if (date == 1 || date == 21 || date == 31) {
     var finaldate = date + "st";
@@ -28,18 +22,7 @@ export default function Todate() {
   }
 
   var months=new Array(7);
-  months[0]="JAN";
-  months[1]="FEB";
-  months[2]="MAR";
-  months[3]="APR";
-  months[4]="MAY";
-  months[5]="JUN";
-  months[6]="JUL";
-  months[7]="AUG";
-  months[8]="SEP";
-  months[9]="OCT";
-  months[10]="NOV";
-  months[11]="DEC";
+  months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
 
   return (
     <div className='datediv'>

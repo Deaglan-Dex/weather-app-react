@@ -21,12 +21,14 @@ export default function Navbar() {
       <Link to="/">
         <img className='home' src={home} alt="Home" />
       </Link>
-      <Link to="/six">
+      <Link to="/sixteen">
         <img className='sixteen' src={sixteen} alt="sixteen" />
       </Link>
         <img className='search' src={search} alt="search" />
         <img className='notif' src={notif} alt="notif" />
+      <Link to="/info?cnt=1">
         <img className='burger' src={burger} alt="burger" />
+      </Link>
     </div>
   )
 }

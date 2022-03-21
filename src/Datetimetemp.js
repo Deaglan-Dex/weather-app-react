@@ -1,6 +1,34 @@
 import React, { Component } from 'react'
 import "./detailsPage.css";
 
+function timeConverter(UNIX_timestamp){
+  var a = new Date(UNIX_timestamp * 1000);
+  var year = a.getFullYear();
+  var month = months[a.getMonth()];
+  var day = weekdays[a.getDay()];
+  var date = dateEnd(a.getDate());
+  var time = day + ' ' + date + ' ' + month + ' ' + year;
+  return time;  
+}
+
+var weekdays=new Array(7);
+weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+function dateEnd(date) {
+  if (date == 1 || date == 21 || date == 31) {
+    return date + "st";
+  } else if (date == 2 || date == 22) {
+    return date + "nd";
+  } else if (date == 3 || date == 23) {
+    return date + "rd";
+  } else {
+    return date + "th";
+  }
+}
+
+var months=new Array(7);
+months=["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
 class App extends Component {
     state = {
       loading: true,
@@ -31,8 +59,18 @@ class App extends Component {
       var lon = localStorage.getItem('lon');
       // console.log(lat)
       // console.log(lon)
-      const url = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=0002ba6db11e43059c746878dacce316&units=metric";
-      console.log(url)
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      window.count = urlParams.get('cnt')
+      console.log(window.count);
+      var url = ""
+      if (window.count == 1) {
+        var url = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=0002ba6db11e43059c746878dacce316&units=metric";
+      } else {
+        var url = "https://api.openweathermap.org/data/2.5/forecast/daily?lat=" + lat + "&lon=" + lon + "&cnt=16&appid=0002ba6db11e43059c746878dacce316&units=metric";
+      }
+      const newurl = url
+      console.log(newurl)
       const response = await fetch(url);
       const data = await response.json();
       this.setState({ weather: data, loading: false });
@@ -50,23 +88,23 @@ class App extends Component {
       if (!this.state.weather) {
         return <div>didn't recieve weather information</div>;
       }
-  
-      var temp = Math.round(this.state.weather.main.temp);
-  
-      var icon = "http://openweathermap.org/img/wn/" + this.state.weather.weather[0].icon + "@2x.png";
-      
-      const current = new Date();
-      const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
-      const time = current.getHours() + ':' + current.getMinutes();
 
+      if (window.count == 1) {
+        const current = new Date();
+        var date = weekdays[`${current.getDay()}`] + " " + dateEnd(`${current.getDate()}`) + " " + months[`${current.getMonth()}`] + " " + `${current.getFullYear()}`;
+        var time = ('0' + current.getHours()).slice(-2) + ':' + ('0' + current.getMinutes()).slice(-2);
+        console.log(date);
+        console.log(time);
+        var temp = <div className='ahhh'><h1 className = "mainTemp">{Math.round(this.state.weather.main.temp)}<sup className='super'>&#176;C</sup></h1></div>
+      } else {
+        var date = timeConverter(this.state.weather.list[(window.count - 1)].dt)
+      }
       return (
           
         <div>
             <h2 className = "date">{date}</h2>
             <h2 className = "time">{time}</h2>
-            <div className='ahhh'>
-                <h1 className = "mainTemp">8<sup className='super'>&#176;C</sup></h1>
-            </div>
+            {temp}
         </div>
       )
     }

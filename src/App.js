@@ -45,7 +45,7 @@ export default function App() {
               <Tiles /> */}
               <Location />
             </Route>
-            <Route exact path='/six'>
+            <Route exact path='/sixteen'>
               <Header />
               <Days />
             </Route>
