@@ -11,6 +11,16 @@
 }
 
 .page {
+	background: url(temp.jpg);
+    background-size: 414px 736px;
+	width: 414px;
+	height: 736px;
+    margin: auto;
+    border: 2px solid black;
+    position: relative;;
+}
+
+.page-clouds {
 	background: url(cloudy2.jpg);
     background-size: 414px 736px;
 	width: 414px;
@@ -18,6 +28,16 @@
     margin: auto;
     border: 2px solid black;
     position: relative;;
+}
+
+.page-clear {
+	background: url(sunny3.jpg);
+    background-size: 414px 736px;
+	width: 414px;
+	height: 736px;
+    margin: auto;
+    border: 2px solid black;
+    position: relative;
 }
 
 /* NAVBAR.JS */
