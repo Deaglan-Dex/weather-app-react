@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 import "./App.css"
-import precicon from './precicon.png'
-import humidicon from './humidicon.png'
-import windicon from './windicon.png'
+import humidicon from './humidity2.png'
+import windicon from './windicon2.png'
+import cloudicon from './cloudicon2.png'
+import precicon from './precicon2.png'
+import volicon from './volume.png'
+import diricon from './wdirection.png'
 
 
 class App extends Component {
@@ -69,7 +72,7 @@ class App extends Component {
           <div className='circlediv'>
             <span className='circles'>
                 <span class="dot">
-                    <img className='precicon' src={precicon} alt="precicon" />
+                    <img className='precicon' src={cloudicon} alt="precicon" />
                     <p className='txt'>{this.state.weather.list[(window.count - 1)].clouds}%</p>
                 </span>
                 <p className='circletxt'>cloudiness</p>
@@ -81,7 +84,7 @@ class App extends Component {
                 </span>
                 <p className='circletxt2'>humidity</p>
             </span>
-            <span className='circles'>
+            <span className='circles3'>
                 <span class="dot">
                     <img className='precicon' src={windicon} alt="windicon" />
                     <p className='txt2'>{Math.round(this.state.weather.list[(window.count - 1)].gust)} m/s</p>
@@ -92,21 +95,21 @@ class App extends Component {
           <div className='circlediv'>
             <span className='circles'>
                 <span class="dot">
-                    <img className='precicon' src={precicon} alt="precicon" />
+                    <img className='precicon' src={diricon} alt="precicon" />
                     <p className='txt'>{this.state.weather.list[(window.count - 1)].deg}°</p>
                 </span>
                 <p className='circletxt6'>direction</p>
             </span>
             <span className='circles2'>
                 <span class="dot">
-                    <img className='precicon' src={humidicon} alt="humidicon" />
+                    <img className='precicon' src={volicon} alt="humidicon" />
                     <p className='txt'>{Math.round(rain)}mm</p>
                 </span>
                 <p className='circletxt5'>rain volume</p>
             </span>
             <span className='circles'>
                 <span class="dot">
-                    <img className='precicon' src={windicon} alt="windicon" />
+                    <img className='precicon' src={precicon} alt="windicon" />
                     <p className='txt2'>{this.state.weather.list[(window.count - 1)].pop}%</p>
                 </span>
                 <p className='circletxt4'>precipitation</p>
