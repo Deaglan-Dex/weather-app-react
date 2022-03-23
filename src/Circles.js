@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import "./App.css"
-import precicon from './precicon.png'
-import humidicon from './humidicon.png'
-import windicon from './windicon.png'
+import humidicon from './humidity2.png'
+import windicon from './windicon2.png'
+import cloudicon from './cloudicon2.png'
 
 class App extends Component {
     state = {
@@ -58,7 +58,7 @@ class App extends Component {
         <div className='circlediv'>
             <span className='circles'>
                 <span class="dot">
-                    <img className='precicon' src={precicon} alt="precicon" />
+                    <img className='precicon' src={cloudicon} alt="precicon" />
                     <p className='txt'>{this.state.weather.clouds.all}%</p>
                 </span>
                 <p className='circletxt'>cloudiness</p>
@@ -72,7 +72,7 @@ class App extends Component {
             </span>
             <span className='circles'>
                 <span class="dot">
-                    <img className='precicon' src={windicon} alt="windicon" />
+                    <img className='precicon1' src={windicon} alt="windicon" />
                     <p className='txt2'>{this.state.weather.wind.speed} m/s</p>
                 </span>
                 <p className='circletxt3'>wind</p>
