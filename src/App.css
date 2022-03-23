@@ -447,3 +447,39 @@
     padding-bottom: 5px;
     color: black;
 }
+
+.searchForm {
+    position:relative;
+    text-align: center;
+    border-width: 0px;
+    top: 20px;
+}
+
+.searchInfo {
+    position: relative;
+    text-align: center;
+}
+
+.searchLabel {
+    
+    position: relative;
+    text-align: center;
+}
+
+.searchText {
+    position: relative;
+}
+.searchSubmit {
+    position: relative;
+    text-align: center;
+    top: 20px;
+    background-color: #00ffff80; /* Turqoise */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 650;
+}

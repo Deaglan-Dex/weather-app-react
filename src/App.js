@@ -1,12 +1,14 @@
-import React, { Component } from 'react'
-import Todate from './Todate'
-import Currentemp from './Currentemp'
-import Circles from './Circles'
-import Navbar from './Navbar'
-import Tiles from './Tiles'
-import Location from './Location'
-import Days from './Days'
-import Header from './Header'
+import React, { Component } from 'react';
+import Todate from './Todate';
+import Currentemp from './Currentemp';
+import Circles from './Circles';
+import Navbar from './Navbar';
+import Tiles from './Tiles';
+import Location from './Location';
+import Days from './Days';
+import Header from './Header';
+import HistoryHeader from './HistoryHeader';
+import HistorySearch from './HistorySearch';
 import "./detailsPage.css";
 import Datetimetemp from "./Datetimetemp";
 import HighLowTemps from "./HighLowTemps";
@@ -14,6 +16,7 @@ import InfoTable from "./InfoTable";
 import TempInfo from "./TempInfo";
 import SunRiseSet from "./SunRiseSet";
 import Status from "./Status";
+import HistoryDateTemp from "./HistoryDateTemp";
 import "./App.css"
 import {
   BrowserRouter as Router,
@@ -78,7 +81,7 @@ class App extends Component {
     console.log(this.state.weather.weather[0].main);
   }
   render() {
-    if (window.locale == 0) {
+    if (window.locale === 0) {
       return <div>Please enable location services and make sure browser has access to it</div>;
     }
 
@@ -115,6 +118,13 @@ class App extends Component {
                 <SunRiseSet />
                 <TempInfo />
                 <InfoTable />
+              </Route>
+              <Route exact path='/search'>
+                <HistoryHeader />
+                <HistorySearch />
+              </Route>
+              <Route exact path='/history'>
+                <HistoryDateTemp />
               </Route>
             </Switch>
             <Navbar />
