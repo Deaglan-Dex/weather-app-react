@@ -2,8 +2,6 @@ import React from 'react';
 import "./App.css";
 import { useState } from 'react';
 import {
-    Link,
-    Redirect,
     useHistory
   } from "react-router-dom";
 
@@ -19,13 +17,6 @@ export default function HistorySearch() {
         search: `?month=${month}&day=${day}`
       })
     }
-
-    // const handleSubmit = (event) => {
-    //     event.preventDefault();
-    //     var redirect = "/history?month=" + month + "&day=" + day;
-    //     <Redirect to={redirect} />
-    // }
-    var abcd = "/history" + day;
   return (
     <form>
         <fieldset className = 'searchForm'>
