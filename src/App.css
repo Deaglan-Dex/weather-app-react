@@ -10,16 +10,6 @@
     text-decoration: none;
 }
 
-.page {
-	background: url(temp.jpg);
-    background-size: 414px 736px;
-	width: 414px;
-	height: 736px;
-    margin: auto;
-    border: 2px solid black;
-    position: relative;;
-}
-
 .page-clouds {
 	background: url(cloudy2.jpg);
     background-size: 414px 736px;
@@ -31,7 +21,37 @@
 }
 
 .page-clear {
-	background: url(sunny3.jpg);
+	background: url(sunny4.jpg);
+    background-size: 414px 736px;
+	width: 414px;
+	height: 736px;
+    margin: auto;
+    border: 2px solid black;
+    position: relative;
+}
+
+.page-thunderstorm {
+	background: url(thunder.jpg);
+    background-size: 414px 736px;
+	width: 414px;
+	height: 736px;
+    margin: auto;
+    border: 2px solid black;
+    position: relative;
+}
+
+.page-snow {
+	background: url(snow2.jpg);
+    background-size: 414px 736px;
+	width: 414px;
+	height: 736px;
+    margin: auto;
+    border: 2px solid black;
+    position: relative;
+}
+
+.page-rain {
+	background: url(rain2.jpg);
     background-size: 414px 736px;
 	width: 414px;
 	height: 736px;
@@ -55,33 +75,27 @@
 .home {
     width: 40px;
     height: 40px;
-    margin-left: 35px;
+    margin-left: 52px;
     margin-top: 12px;
 }
 
 .sixteen {
     width: 33px;
     height: 33px;
-    margin-left: 40px;
+    margin-left: 52px;
     margin-bottom: 3px;
 }
 
 .search {
     width: 40px;
     height: 40px;
-    margin-left: 35px;
-}
-
-.notif {
-    width: 40px;
-    height: 40px;
-    margin-left: 35px;
+    margin-left: 52px;
 }
 
 .burger {
     width: 30px;
     height: 30px;
-    margin-left: 35px;
+    margin-left: 52px;
     margin-bottom: 5px;
 }
 

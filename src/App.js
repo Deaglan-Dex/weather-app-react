@@ -15,8 +15,6 @@ import TempInfo from "./TempInfo";
 import SunRiseSet from "./SunRiseSet";
 import Status from "./Status";
 import "./App.css"
-import cloudsbackg from "./cloudy2.jpg";
-import clearbackg from "./sunny.jpg";
 import {
   BrowserRouter as Router,
   Switch,
@@ -24,12 +22,21 @@ import {
   Link
 } from "react-router-dom";
 
-function hello(ahh) {
-  if (ahh === "Clouds") {
-    return "page-clouds";
-  }
-  else if (ahh === "Clear"){
+function weatherBackg(desc) {
+  if (desc === "Clear"){
     return "page-clear";
+  }
+  else if (desc === "Thunderstorm"){
+    return "page-thunderstorm";
+  }
+  else if (desc === "Snow"){
+    return "page-snow";
+  }
+  else if (desc === "Rain"){
+    return "page-rain";
+  }
+  else {
+    return "page-clouds";
   }
 }
 
@@ -83,10 +90,10 @@ class App extends Component {
       return <div>didn't recieve weather information</div>;
     }
 
-    var abcd = this.state.weather.weather[0].main;
+    var descr = this.state.weather.weather[0].main;
     return (
       <Router>
-          <div className={hello(abcd)}>
+          <div className={weatherBackg(descr)}>
             <Switch>
               <Route exact path='/'>
                 <Link to="/info?cnt=1">

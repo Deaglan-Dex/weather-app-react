@@ -36,9 +36,24 @@ body {
     font-size: 45pt;
 }
 
+.mainTemp2 {
+    position: relative;
+    /* text-align: center; */
+    /* left: 45%; */
+    margin-top: 10px;
+    font-size: 30pt;
+    margin-bottom: 10px;
+}
+
 .super {
     position: relative;
     font-size: 16pt;
+    vertical-align: top;
+}
+
+.super2 {
+    position: relative;
+    font-size: 10pt;
     vertical-align: top;
 }
 
