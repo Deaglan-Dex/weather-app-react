@@ -57,15 +57,16 @@ class App extends Component {
 
     return (
       <div>
-          <div className='box'>
-            <p className='tempnum'>{('0' + temp).slice(-2)}</p>
-            <p className='tempdeg'>°C</p>
-          </div>
-          <div className='inline'>
-            <img className='tempicon' src={icon} alt="cloudicon" />
-            <p className='tempdesc'>{this.state.weather.weather[0].main}</p>
-          </div>
-          
+        <div className='tempwrapper'>
+            <div className='box'>
+              <p className='tempnum'>{('0' + temp).slice(-2)}</p>
+              <p className='tempdeg'>°C</p>
+            </div>
+            <div className='inline'>
+              <img className='tempicon' src={icon} alt="cloudicon" />
+              <p className='tempdesc'>{this.state.weather.weather[0].main}</p>
+            </div>
+        </div>
       </div>
     )
   }
