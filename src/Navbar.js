@@ -24,7 +24,9 @@ export default function Navbar() {
       <Link to="/sixteen">
         <img className='sixteen' src={sixteen} alt="sixteen" />
       </Link>
+      <Link to="/search">
         <img className='search' src={search} alt="search" />
+      </Link>
       <Link to="/info?cnt=1">
         <img className='burger' src={burger} alt="burger" />
       </Link>

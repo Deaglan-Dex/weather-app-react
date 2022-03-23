@@ -2,18 +2,20 @@ import React from 'react';
 import "./App.css";
 import { useState } from 'react';
 import {
-    Redirect
+    useHistory
   } from "react-router-dom";
 
 export default function HistorySearch() {
     const [day, setDay] = useState("");
     const [month, setMonth] = useState("");
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        return <Redirect to = "/history" />
-        // alert(`The day you entered was: ${day} and the month you entered was ${month}`);
-
+    const history = useHistory();
+  
+    const handleSubmit = () => {
+      history.push({
+        pathname: '/history',
+        search: `?month=${month}&day=${day}`
+      })
     }
   return (
     <form>

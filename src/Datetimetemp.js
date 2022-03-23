@@ -15,11 +15,11 @@ var weekdays=new Array(7);
 weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 function dateEnd(date) {
-  if (date === 1 || date === 21 || date === 31) {
+  if (date == 1 || date == 21 || date == 31) {
     return date + "st";
-  } else if (date === 2 || date === 22) {
+  } else if (date == 2 || date == 22) {
     return date + "nd";
-  } else if (date === 3 || date === 23) {
+  } else if (date == 3 || date == 23) {
     return date + "rd";
   } else {
     return date + "th";
@@ -64,7 +64,7 @@ class App extends Component {
       window.count = urlParams.get('cnt')
       console.log(window.count);
       var url = ""
-      if (window.count === 1) {
+      if (window.count == 1) {
         url = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=0002ba6db11e43059c746878dacce316&units=metric";
       } else {
         url = "https://api.openweathermap.org/data/2.5/forecast/daily?lat=" + lat + "&lon=" + lon + "&cnt=16&appid=0002ba6db11e43059c746878dacce316&units=metric";
@@ -77,7 +77,7 @@ class App extends Component {
     }
   
     render() {
-      if (window.locale === 0) {
+      if (window.locale == 0) {
         return <div>Please enable location services and make sure browser has access to it</div>;
       }
   
@@ -89,7 +89,7 @@ class App extends Component {
         return <div>didn't recieve weather information</div>;
       }
 
-      if (window.count === 1) {
+      if (window.count == 1) {
         const current = new Date();
         var date = weekdays[`${current.getDay()}`] + " " + dateEnd(`${current.getDate()}`) + " " + months[`${current.getMonth()}`] + " " + `${current.getFullYear()}`;
         var time = ('0' + current.getHours()).slice(-2) + ':' + ('0' + current.getMinutes()).slice(-2);
