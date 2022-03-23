@@ -81,7 +81,7 @@ class App extends Component {
     console.log(this.state.weather.weather[0].main);
   }
   render() {
-    if (window.locale === 0) {
+    if (window.locale == 0) {
       return <div>Please enable location services and make sure browser has access to it</div>;
     }
 

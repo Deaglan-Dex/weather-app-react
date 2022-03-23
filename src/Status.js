@@ -36,7 +36,7 @@ class App extends Component {
       window.count = urlParams.get('cnt')
       console.log(window.count);
       var url = ""
-      if (window.count === 1) {
+      if (window.count == 1) {
         url = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=0002ba6db11e43059c746878dacce316&units=metric";
       } else {
         url = "https://api.openweathermap.org/data/2.5/forecast/daily?lat=" + lat + "&lon=" + lon + "&cnt=16&appid=0002ba6db11e43059c746878dacce316&units=metric";
@@ -49,7 +49,7 @@ class App extends Component {
     }
   
     render() {
-      if (window.locale === 0) {
+      if (window.locale == 0) {
         return <div>Please enable location services and make sure browser has access to it</div>;
       }
   
@@ -62,7 +62,7 @@ class App extends Component {
       }
       var icon = "";
       var description = "";
-      if (window.count === 1) {
+      if (window.count == 1) {
         icon = "http://openweathermap.org/img/wn/" + this.state.weather.weather[0].icon + "@2x.png";
         description = this.state.weather.weather[0].description;
       } else {

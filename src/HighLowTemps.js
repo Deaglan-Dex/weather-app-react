@@ -36,7 +36,7 @@ class App extends Component {
       window.count = urlParams.get('cnt')
       console.log(window.count);
       var url = ""
-      if (window.count === 1) {
+      if (window.count == 1) {
         url = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=0002ba6db11e43059c746878dacce316&units=metric";
       } else {
         url = "https://api.openweathermap.org/data/2.5/forecast/daily?lat=" + lat + "&lon=" + lon + "&cnt=16&appid=0002ba6db11e43059c746878dacce316&units=metric";
@@ -49,7 +49,7 @@ class App extends Component {
     }
   
     render() {
-      if (window.locale === 0) {
+      if (window.locale == 0) {
         return <div>Please enable location services and make sure browser has access to it</div>;
       }
   
@@ -64,7 +64,7 @@ class App extends Component {
       var hightemp = 0;
       var lowtemp = 0;
 
-      if (window.count === 1) {
+      if (window.count == 1) {
         hightemp = Math.round(this.state.weather.main.temp_max);
         lowtemp = Math.round(this.state.weather.main.temp_min);
       } else {
