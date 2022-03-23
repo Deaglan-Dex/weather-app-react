@@ -17,6 +17,9 @@ import TempInfo from "./TempInfo";
 import SunRiseSet from "./SunRiseSet";
 import Status from "./Status";
 import HistoryDateTemp from "./HistoryDateTemp";
+import HistoryHighLow from "./HistoryHighLow";
+import HistoryStatus from "./HistoryStatus";
+import HistoryInfoTable from "./HistoryInfoTable";
 import "./App.css"
 import {
   BrowserRouter as Router,
@@ -125,6 +128,11 @@ class App extends Component {
               </Route>
               <Route exact path='/history'>
                 <HistoryDateTemp />
+                <HistoryHighLow />
+                {/* <HistoryStatus /> */}
+                {/* <HistorySunRiseSet /> */}
+                {/* <HistoryTempInfo /> */}
+                <HistoryInfoTable />
               </Route>
             </Switch>
             <Navbar />
