@@ -61,6 +61,7 @@ class App extends Component {
           localStorage.setItem('lat', position.coords.latitude);
           localStorage.setItem('lon', position.coords.longitude);
           window.locale = 1;
+          console.log("qwerty" + window.locale);
         },
         function(error) {
           console.error("Error Code = " + error.code + " - " + error.message);
@@ -74,10 +75,11 @@ class App extends Component {
     console.log(lat)
     console.log(lon)
     const url = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=0002ba6db11e43059c746878dacce316&units=metric";
+    // const url = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=0002ba6db11e43059c746878dacce316&units=metric";
     const response = await fetch(url);
     const data = await response.json();
     this.setState({ weather: data, loading: false });
-    console.log("ahhh" + url);
+    console.log(url);
     console.log(this.state.weather.weather[0].main);
   }
   render() {
