@@ -3,7 +3,6 @@ import "./App.css"
 import home from './home.png'
 import sixteen from './sixteen.png'
 import search from './search.png'
-import notif from './notif.png'
 import burger from './burger.png'
 import {
   Link
@@ -12,7 +11,6 @@ import {
 console.log(home);
 console.log(sixteen);
 console.log(search);
-console.log(notif);
 console.log(burger);
 
 export default function Navbar() {
