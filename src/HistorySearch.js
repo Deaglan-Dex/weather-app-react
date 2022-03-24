@@ -20,11 +20,11 @@ export default function HistorySearch() {
   return (
     <form>
         <fieldset className = 'searchForm'>
-            <label>Day: </label>
-            <input type = 'number' min = '1' max = '31' value = {day} onChange = {(e) => setDay(e.target.value)} className = 'searchText'/><br/>
-            <label>Month:</label>
-            <input type = 'number' min = '1' max = '12' value = {month} onChange = {(e) => setMonth(e.target.value)} className = 'searchText'/><br/>
-            <input type = 'submit' onClick = {handleSubmit} className = 'searchSubmit' />
+          <div className='searchTexts'>
+              <input type = 'number' min = '1' max = '31' value = {day} onChange = {(e) => setDay(e.target.value)} className = 'searchText' placeholder='Day'/><br/>
+              <input type = 'number' min = '1' max = '12' value = {month} onChange = {(e) => setMonth(e.target.value)} className = 'searchText' placeholder='Month'/><br/>
+          </div>    
+            <input type = 'submit' onClick = {handleSubmit} className = 'searchSubmit' value='Search' />
         </fieldset>
     </form>
   )

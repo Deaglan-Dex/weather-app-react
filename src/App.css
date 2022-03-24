@@ -466,38 +466,58 @@
     color: black;
 }
 
-.searchForm {
-    position:relative;
-    text-align: center;
-    border-width: 0px;
-    top: 20px;
-}
+
+/* HistorySearch.js */
 
 .searchInfo {
-    position: relative;
+    margin-top: 20px;
     text-align: center;
+    font-style: italic;
 }
 
-.searchLabel {
-    
-    position: relative;
+.searchTexts {
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.searchForm {
+    border: none;
+    width: 98%;
+    padding: 0;
     text-align: center;
+    margin-top: 50px;
+}
+
+::placeholder {
+    font-family: "Mulish";
+    color: rgb(41, 41, 41);
+    font-size: 16pt;
 }
 
 .searchText {
-    position: relative;
+    font-family: "Mulish";
+    color: black;
+    text-align: center;
+    width: 20%;
+    height: 50px;
+    margin: 0 2px 15px 10px;
+    font-size: 20pt;
+    border: 2px solid black;
+    border-radius: 3%;
 }
+
 .searchSubmit {
-    position: relative;
     text-align: center;
-    top: 20px;
-    background-color: #00ffff80; /* Turqoise */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 650;
+    width: 50%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 3%;
+    height: 40px;
+    font-family: "Mulish";
+    font-weight: bold;
+}
+
+.searchSubmit:hover {
+    background-color: rgba(61, 236, 213, 0.384);
 }
