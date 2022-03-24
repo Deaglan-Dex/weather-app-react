@@ -18,7 +18,6 @@ import SunRiseSet from "./SunRiseSet";
 import Status from "./Status";
 import HistoryDateTemp from "./HistoryDateTemp";
 import HistoryHighLow from "./HistoryHighLow";
-import HistoryStatus from "./HistoryStatus";
 import HistoryInfoTable from "./HistoryInfoTable";
 import "./App.css"
 import {
@@ -59,8 +58,6 @@ class App extends Component {
       console.log("Available");
       navigator.geolocation.getCurrentPosition(
         function(position) {
-          // console.log("Latitude is :", position.coords.latitude);
-          // console.log("Longitude is :", position.coords.longitude);
           localStorage.setItem('lat', position.coords.latitude);
           localStorage.setItem('lon', position.coords.longitude);
           window.locale = 1;
@@ -74,8 +71,8 @@ class App extends Component {
     }
     var lat = localStorage.getItem('lat');
     var lon = localStorage.getItem('lon');
-    // console.log(lat)
-    // console.log(lon)
+    console.log(lat)
+    console.log(lon)
     const url = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=0002ba6db11e43059c746878dacce316&units=metric";
     const response = await fetch(url);
     const data = await response.json();
@@ -129,9 +126,6 @@ class App extends Component {
               <Route exact path='/history'>
                 <HistoryDateTemp />
                 <HistoryHighLow />
-                {/* <HistoryStatus /> */}
-                {/* <HistorySunRiseSet /> */}
-                {/* <HistoryTempInfo /> */}
                 <HistoryInfoTable />
               </Route>
             </Switch>

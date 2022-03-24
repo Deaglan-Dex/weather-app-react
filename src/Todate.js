@@ -3,7 +3,6 @@ import "./App.css"
 
 export default function Todate() {
   const current = new Date();
-  // const date = `${current.getDay()}/${current.getMonth()+1}/${current.getFullYear()}`;
   const day = `${current.getDay()}`;
   const date = `${current.getDate()}`;
   const month = `${current.getMonth()}`;
