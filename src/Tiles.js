@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import "./App.css"
-import rain from './rain.png'
 import {
   Link
 } from "react-router-dom";
@@ -32,7 +31,7 @@ function dateEnd(date) {
     return date + "th";
   }
 }
-console.log(rain)
+
 
 class App extends Component {
   state = {
