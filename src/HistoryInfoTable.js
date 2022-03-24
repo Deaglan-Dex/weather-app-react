@@ -71,15 +71,15 @@ class App extends Component {
       // }
       return (
         <div className='infoTable'>
-          <div className='circlediv'>
-            <span className='circles'>
+          <div className='circlediv1'>
+            <span className='scircles'>
                 <span class="dot">
                     <img className='precicon' src={cloudicon} alt="precicon" />
                     <p className='txt'>{Math.round(this.state.weather.result.clouds.mean)}%</p>
                 </span>
                 <p className='circletxt'>cloudiness</p>
             </span>
-            <span className='circles2'>
+            <span className='scircles2'>
                 <span class="dot">
                     <img className='precicon' src={humidicon} alt="humidicon" />
                     <p className='txt'>{Math.round(this.state.weather.result.humidity.mean)}%</p>
@@ -88,14 +88,14 @@ class App extends Component {
             </span>
           </div>
           <div className='circlediv'>
-            <span className='circles3'>
+            <span className='scircles3'>
                 <span class="dot">
                     <img className='precicon' src={windicon} alt="windicon" />
                     <p className='txt2'>{Math.round(this.state.weather.result.wind.mean)} m/s</p>
                 </span>
                 <p className='circletxt3'>wind</p>
             </span>
-            <span className='circles2'>
+            <span className='scircles2'>
                 <span class="dot">
                     <img className='precicon' src={volicon} alt="humidicon" />
                     <p className='txt'>{Math.round(this.state.weather.result.precipitation.mean)}mm</p>

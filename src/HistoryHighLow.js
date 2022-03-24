@@ -67,9 +67,9 @@ class App extends Component {
       var lowtemp = kelToCel(this.state.weather.result.temp.average_min);
       
       return (
-        <div className="highhh">
-            <p className="highlowtemp">H: {hightemp}<sup>&#176;C</sup></p>
-            <p className="highlowtemp">L: {lowtemp}<sup>&#176;C</sup></p>
+        <div className="highhh1">
+            <p className="highlowtemp1">H: {hightemp}<sup>&#176;C</sup></p>
+            <p className="highlowtemp1">L: {lowtemp}<sup>&#176;C</sup></p>
         </div>
       )
     }

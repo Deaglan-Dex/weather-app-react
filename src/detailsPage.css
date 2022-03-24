@@ -73,6 +73,22 @@ body {
     /* margin-top: 10px; */
 }
 
+.highhh1 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.highlowtemp1 {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 900;
+    font-size: 30px;
+    margin-top: 10px; 
+}
+
 .statusdiv {
     text-align: center;
     /* margin-top: 10px; */

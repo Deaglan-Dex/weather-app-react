@@ -223,6 +223,11 @@
     margin-bottom: 20px;
 }
 
+.circlediv1 {
+    margin-bottom: 40px;
+    
+}
+
 .dot {
     position: relative;
     /* top: -720px; */
@@ -346,6 +351,23 @@
 .circles3 {
     display: inline-block;
     margin-left: 6px;
+}
+
+.scircles {
+    display: inline-block;
+    margin-right: 70px;
+    margin-left: 37px;
+}
+
+.scircles2 {
+    display: inline-block;
+    
+}
+
+.scircles3 {
+    display: inline-block;
+    margin-right: 70px;
+    margin-left: 37px;
 }
 
 .circlediv {
@@ -486,12 +508,12 @@
     width: 98%;
     padding: 0;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 ::placeholder {
     font-family: "Mulish";
-    color: rgb(41, 41, 41);
+    color: rgb(0, 0, 0);
     font-size: 16pt;
 }
 
