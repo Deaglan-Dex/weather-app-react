@@ -12,16 +12,10 @@ export default function HistorySearch() {
     const history = useHistory();
   
     const handleSubmit = () => {
-      if (parseInt(month) > 12 && parseInt(month) < 1) {
-        alert("Please input a month between 1 and 12");
-      } else if (parseInt(day) > 31 && parseInt(day) < 1) {
-        alert("Please input a month between 1 and 31");
-      } else {
         history.push({
           pathname: '/history',
           search: `?month=${month}&day=${day}`
       })
-    }
     }
   return (
     <form>
