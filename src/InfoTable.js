@@ -14,7 +14,7 @@ class App extends Component {
       weather: null
     };
   
-    async componentDidMount() {
+    async componentDidMount() {  //Storing information according to location
       window.locale = 0;
   
       if ("geolocation" in navigator) {

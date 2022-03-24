@@ -13,7 +13,7 @@ console.log(sixteen);
 console.log(search);
 console.log(burger);
 
-export default function Navbar() {
+export default function Navbar() { // To enable the user to navigate on the app
   return (
     <div className='navbar'>
       <Link to="/">

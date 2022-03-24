@@ -11,7 +11,7 @@ function timeConverter(UNIX_timestamp){
   return time;  
 }
 // hi
-var weekdays=new Array(7);
+var weekdays=new Array(7);  // To store the days of the week
 weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 function dateEnd(date) {
@@ -26,7 +26,7 @@ function dateEnd(date) {
   }
 }
 
-var months=new Array(7);
+var months=new Array(7); //To store the months
 months=["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 class App extends Component {
@@ -76,7 +76,7 @@ class App extends Component {
       this.setState({ weather: data, loading: false });
     }
   
-    render() {
+    render() {  // For rendering weather services on the browser according to current location
       if (window.locale == 0) {
         return <div>Please enable location services and make sure browser has access to it</div>;
       }

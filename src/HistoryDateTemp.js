@@ -6,7 +6,7 @@ function kelToCel(temp) {
   return newtemp;
 }
 
-function dateEnd(date) {
+function dateEnd(date) {  // Stroing dates
   if (date == 1 || date == 21 || date == 31) {
     return date + "st";
   } else if (date == 2 || date == 22) {

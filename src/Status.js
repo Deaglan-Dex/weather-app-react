@@ -7,7 +7,7 @@ class App extends Component {
       weather: null
     };
   
-    async componentDidMount() {
+    async componentDidMount() { // Current status of the weather
       window.locale = 0;
   
       if ("geolocation" in navigator) {

@@ -7,7 +7,7 @@ class App extends Component {
       weather: null
     };
   
-    async componentDidMount() {
+    async componentDidMount() { // To enable variations in temperature according to user's location
       window.locale = 0;
   
       if ("geolocation" in navigator) {

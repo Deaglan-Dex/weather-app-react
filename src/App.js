@@ -27,7 +27,7 @@ import {
   Link
 } from "react-router-dom";
 
-function weatherBackg(desc) {
+function weatherBackg(desc) {  // To showcase the different weather conditions
   if (desc === "Clear"){
     return "page-clear";
   }
@@ -45,7 +45,7 @@ function weatherBackg(desc) {
   }
 }
 
-class App extends Component {
+class App extends Component {  // To enable location services
   state = {
     loading: true,
     weather: null
@@ -61,6 +61,7 @@ class App extends Component {
           localStorage.setItem('lat', position.coords.latitude);
           localStorage.setItem('lon', position.coords.longitude);
           window.locale = 1;
+          console.log(window.locale);
         },
         function(error) {
           console.error("Error Code = " + error.code + " - " + error.message);
@@ -80,7 +81,7 @@ class App extends Component {
     console.log("ahhh" + url);
     console.log(this.state.weather.weather[0].main);
   }
-  render() {
+  render() {    // To render the waether conditions on the app
     if (window.locale == 0) {
       return <div>Please enable location services and make sure browser has access to it</div>;
     }

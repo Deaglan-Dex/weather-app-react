@@ -7,7 +7,7 @@ class App extends Component {
     weather: null
   };
 
-  async componentDidMount() {
+  async componentDidMount() {  // To get the waether conditions according to user's current location
     window.locale = 0;
 
     if ("geolocation" in navigator) {
@@ -38,7 +38,7 @@ class App extends Component {
     this.setState({ weather: data, loading: false });
   }
 
-  render() {
+  render() {  // to enable the user to switch on the location services
     if (window.locale == 0) {
       return <div>Please enable location services and make sure browser has access to it</div>;
     }

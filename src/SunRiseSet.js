@@ -11,7 +11,7 @@ function timeConverter(UNIX_timestamp){
     return time;  
   }
 
-class App extends Component {
+class App extends Component { 
     state = {
       loading: true,
       weather: null

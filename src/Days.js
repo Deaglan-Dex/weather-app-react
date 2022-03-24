@@ -22,7 +22,7 @@ export default function dayss() {
     // const days2 = new Date(days1)
     // days2.setDate(days2.getDate() + 1)
 
-    var days = new Array(16);
+    var days = new Array(16);  // To store months and year
     days[0] = new Date();
     for (let i = 1; i < days.length; i++) {
         days[i] = new Date(days[0]);
