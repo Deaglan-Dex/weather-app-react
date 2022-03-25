@@ -6,22 +6,6 @@ import {
   } from "react-router-dom";
 
 export default function dayss() {
-    // function navigateTodays(event) {
-    //     console.log(event)
-    // }
-
-    // const [weekDates, setWeekdates] = useState(['Mondays 16', 'Tuesdays 17', 'Wednesdays 18'])
-
-    // var weekdayssList = weekDates.map((weekDate) => {
-    //     return (<li key={weekDate}>
-    //                 <button onClick={() => navigateTodays(weekDate)}>{weekDate}</button>
-    //             </li>)
-    //   })
-
-    // const days1 = new Date();
-    // const days2 = new Date(days1)
-    // days2.setDate(days2.getDate() + 1)
-
     var days = new Array(16);  // To store months and year
     days[0] = new Date();
     for (let i = 1; i < days.length; i++) {
@@ -54,9 +38,6 @@ export default function dayss() {
 
     return (
       <div>
-          {/* <ul>
-             {weekdayssList}
-          </ul> */}
           <div className='line'>
             <Link to="/info?cnt=1">
                 <div className='dateTile'>

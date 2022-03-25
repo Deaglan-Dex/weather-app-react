@@ -7,7 +7,7 @@ class App extends Component {
     weather: null
   };
 
-  async componentDidMount() {  // To get the waether conditions according to user's current location
+  async componentDidMount() {  // To get the weather conditions according to user's current location
     window.locale = 0;
 
     if ("geolocation" in navigator) {
