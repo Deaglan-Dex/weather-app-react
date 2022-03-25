@@ -13,7 +13,10 @@ console.log(sixteen);
 console.log(search);
 console.log(burger);
 
-export default function Navbar() { // To enable the user to navigate on the app
+// To enable the user to navigate on the app
+// Makes use of react routing to link to different pages that we have made on the app
+// Allows the app to change pages without having to refresh
+export default function Navbar() {
   return (
     <div className='navbar'>
       <Link to="/">

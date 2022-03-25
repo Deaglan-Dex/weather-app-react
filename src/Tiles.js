@@ -70,7 +70,7 @@ class App extends Component {
     this.setState({ weather: data, loading: false });
   }
 
-  render() {
+  render() { // Renders a 3 day forecast on the main landing page, separated into 3 tiles.
     if (window.locale == 0) {
       return <div>Please enable location services and make sure browser has access to it</div>;
     }

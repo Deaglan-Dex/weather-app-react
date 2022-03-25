@@ -27,7 +27,7 @@ import {
   Link
 } from "react-router-dom";
 
-function weatherBackg(desc) {  // To showcase the different weather conditions
+function weatherBackg(desc) {  // Dynamic backgroud image based on the different weather conditions
   if (desc === "Clear"){
     return "page-clear";
   }
@@ -45,7 +45,7 @@ function weatherBackg(desc) {  // To showcase the different weather conditions
   }
 }
 
-class App extends Component {  // To enable location services
+class App extends Component {
   state = {
     loading: true,
     weather: null
@@ -75,15 +75,14 @@ class App extends Component {  // To enable location services
     console.log(lat)
     console.log(lon)
     const url = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=0002ba6db11e43059c746878dacce316&units=metric";
-    // const url = "https://api.openweathermap.org/data/2.5/weather?lat=" + "53" + "&lon=" + "113" + "&appid=0002ba6db11e43059c746878dacce316&units=metric";
     const response = await fetch(url);
     const data = await response.json();
     this.setState({ weather: data, loading: false });
     console.log(url);
     console.log(this.state.weather.weather[0].main);
   }
-  render() {    // To render the waether conditions on the app
-    if (window.locale == 0) {
+  render() {    // To render components to the screen
+    if (window.locale == 0) { 
       return <div>Please enable location services and make sure browser has access to it</div>;
     }
 
