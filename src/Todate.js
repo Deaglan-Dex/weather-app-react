@@ -1,7 +1,10 @@
 import React from 'react'
 import "./App.css"
 
-export default function Todate() {
+export default function Todate() { // Function to get current date and format it to match our design
+  // Gets the current date using built-in javascript Date function, 
+  // then uses information returned from the function to manually format it.
+
   const current = new Date();
   const day = `${current.getDay()}`;
   const date = `${current.getDate()}`;

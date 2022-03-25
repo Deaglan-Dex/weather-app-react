@@ -6,7 +6,7 @@ function kelToCel(temp) {
   return newtemp;
 }
 
-function dateEnd(date) {  // Stroing dates
+function dateEnd(date) {
   if (date == 1 || date == 21 || date == 31) {
     return date + "st";
   } else if (date == 2 || date == 22) {
@@ -21,6 +21,8 @@ function dateEnd(date) {  // Stroing dates
 var months=new Array(7);
 months=["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
+
+// Calculates (based on API info) and displays the average temperature of a day in the past which the user searches for
 class App extends Component {
     state = {
       loading: true,

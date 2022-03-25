@@ -4,6 +4,7 @@ import humidicon from './humidity2.png'
 import windicon from './windicon2.png'
 import cloudicon from './cloudicon2.png'
 
+// Fetches and shows cloudiness, humidity and wind data on the main home page.
 class App extends Component {
     state = {
       loading: true,

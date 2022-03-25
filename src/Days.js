@@ -5,6 +5,8 @@ import {
     Link
   } from "react-router-dom";
 
+
+// Function that calculates the upcoming 16 days from today and puts their dates into the tiles on the 16-tile page
 export default function dayss() {
     var days = new Array(16);  // To store months and year
     days[0] = new Date();

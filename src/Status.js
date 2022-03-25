@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 import "./detailsPage.css";
 
+ // Determine and render the current status of the weather (sunny, cloudy, rainy, etc)
 class App extends Component {
     state = {
       loading: true,
       weather: null
     };
   
-    async componentDidMount() { // Current status of the weather
+    async componentDidMount() {
       window.locale = 0;
   
       if ("geolocation" in navigator) {

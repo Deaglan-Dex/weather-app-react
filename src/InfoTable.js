@@ -14,7 +14,7 @@ class App extends Component {
       weather: null
     };
   
-    async componentDidMount() {  //Storing information according to location
+    async componentDidMount() { // Fetching and storing information according to location
       window.locale = 0;
   
       if ("geolocation" in navigator) {
@@ -67,7 +67,7 @@ class App extends Component {
       if (this.state.weather.list[(window.count - 1)].rain != null) {
         rain = this.state.weather.list[(window.count - 1)].rain;
       }
-      return (
+      return ( // Using stored information to render further weather details to the screen
         <div className='infoTable'>
           <div className='circlediv'>
             <span className='circles'>

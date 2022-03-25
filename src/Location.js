@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 
+// To access the location of the user and display weather conditions accordingly
 class App extends Component {
   state = {
     loading: true,
     weather: null
   };
 
-  async componentDidMount() { // To access the location of the user and dispaly he weather conditions accordingly
+  async componentDidMount() {
     window.locale = 0;
 
     if ("geolocation" in navigator) {

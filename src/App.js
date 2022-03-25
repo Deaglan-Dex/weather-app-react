@@ -27,17 +27,17 @@ import {
   Link
 } from "react-router-dom";
 
-function weatherBackg(desc) {  // To showcase the different weather conditions
-  if (desc === "Clear"){
+function weatherBackg(desc) {  // Dynamic backgroud image based on the different weather conditions
+  if (desc === "Clear") {
     return "page-clear";
   }
-  else if (desc === "Thunderstorm"){
+  else if (desc === "Thunderstorm") {
     return "page-thunderstorm";
   }
-  else if (desc === "Snow"){
+  else if (desc === "Snow") {
     return "page-snow";
   }
-  else if (desc === "Rain"){
+  else if (desc === "Rain") {
     return "page-rain";
   }
   else {
@@ -45,7 +45,7 @@ function weatherBackg(desc) {  // To showcase the different weather conditions
   }
 }
 
-class App extends Component {  // To enable location services
+class App extends Component {
   state = {
     loading: true,
     weather: null
@@ -57,13 +57,13 @@ class App extends Component {  // To enable location services
     if ("geolocation" in navigator) {
       console.log("Available");
       navigator.geolocation.getCurrentPosition(
-        function(position) {
+        function (position) {
           localStorage.setItem('lat', position.coords.latitude);
           localStorage.setItem('lon', position.coords.longitude);
           window.locale = 1;
           console.log(window.locale);
         },
-        function(error) {
+        function (error) {
           console.error("Error Code = " + error.code + " - " + error.message);
         }
       );
@@ -75,14 +75,13 @@ class App extends Component {  // To enable location services
     console.log(lat)
     console.log(lon)
     const url = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=0002ba6db11e43059c746878dacce316&units=metric";
-    // const url = "https://api.openweathermap.org/data/2.5/weather?lat=" + "53" + "&lon=" + "113" + "&appid=0002ba6db11e43059c746878dacce316&units=metric";
     const response = await fetch(url);
     const data = await response.json();
     this.setState({ weather: data, loading: false });
     console.log(url);
     console.log(this.state.weather.weather[0].main);
   }
-  render() {    // To render the waether conditions on the app
+  render() {
     if (window.locale == 0) {
       return <div>Please enable location services and make sure browser has access to it</div>;
     }
@@ -98,42 +97,43 @@ class App extends Component {  // To enable location services
     var descr = this.state.weather.weather[0].main;
     return (
       <Router>
-          <div className={weatherBackg(descr)}>
-            <Switch>
-              <Route exact path='/'>
-                <Link to="/info?cnt=1">
-                  <Todate />
-                  <Currentemp />
-                  <Circles />
-                </Link>
-                <Tiles />
-                <Location />
-              </Route>
-              <Route exact path='/sixteen'>
-                <Header />
-                <Days />
-              </Route>
-              <Route exact path='/info'>
-                <Datetimetemp />
-                <HighLowTemps />
-                <Status />
-                <SunRiseSet />
-                <TempInfo />
-                <InfoTable />
-              </Route>
-              <Route exact path='/search'>
-                <HistoryHeader />
-                <HistorySearch />
-              </Route>
-              <Route exact path='/history'>
-                <HistoryDateTemp />
-                <HistoryHighLow />
-                <HistoryInfoTable />
-              </Route>
-            </Switch>
-            <Navbar />
-          </div>
-        </Router>
-    )}
+        <div className={weatherBackg(descr)}>
+          <Switch>
+            <Route exact path='/'>
+              <Link to="/info?cnt=1">
+                <Todate />
+                <Currentemp />
+                <Circles />
+              </Link>
+              <Tiles />
+              <Location />
+            </Route>
+            <Route exact path='/sixteen'>
+              <Header />
+              <Days />
+            </Route>
+            <Route exact path='/info'>
+              <Datetimetemp />
+              <HighLowTemps />
+              <Status />
+              <SunRiseSet />
+              <TempInfo />
+              <InfoTable />
+            </Route>
+            <Route exact path='/search'>
+              <HistoryHeader />
+              <HistorySearch />
+            </Route>
+            <Route exact path='/history'>
+              <HistoryDateTemp />
+              <HistoryHighLow />
+              <HistoryInfoTable />
+            </Route>
+          </Switch>
+          <Navbar />
+        </div>
+      </Router>
+    )
+  }
 }
 export default App;

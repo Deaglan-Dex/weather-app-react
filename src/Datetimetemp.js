@@ -10,7 +10,7 @@ function timeConverter(UNIX_timestamp){
   var time = day + ' ' + date + ' ' + month + ' ' + year;
   return time;  
 }
-// hi
+
 var weekdays=new Array(7);  // To store the days of the week
 weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
@@ -26,7 +26,7 @@ function dateEnd(date) {
   }
 }
 
-var months=new Array(7); //To store the months
+var months=new Array(7); // To store the months
 months=["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 class App extends Component {
@@ -76,7 +76,7 @@ class App extends Component {
       this.setState({ weather: data, loading: false });
     }
   
-    render() {  // For rendering weather services on the browser according to current location
+    render() {  
       if (window.locale == 0) {
         return <div>Please enable location services and make sure browser has access to it</div>;
       }
@@ -89,7 +89,7 @@ class App extends Component {
         return <div>didn't recieve weather information</div>;
       }
 
-      if (window.count == 1) {
+      if (window.count == 1) { // For rendering weather services on the browser according to current location
         const current = new Date();
         var date = weekdays[`${current.getDay()}`] + " " + dateEnd(`${current.getDate()}`) + " " + months[`${current.getMonth()}`] + " " + `${current.getFullYear()}`;
         var time = ('0' + current.getHours()).slice(-2) + ':' + ('0' + current.getMinutes()).slice(-2);

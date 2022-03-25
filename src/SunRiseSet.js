@@ -3,7 +3,7 @@ import "./detailsPage.css";
 import sunriseImg from './Sunrise.png';
 import sunsetImg from './Sunset.png'
 
-function timeConverter(UNIX_timestamp){
+function timeConverter(UNIX_timestamp){ // UNIX time converter function to get a readable time format hh:mm
     var a = new Date(UNIX_timestamp * 1000);
     var hour = ('0' + a.getHours()).slice(-2);
     var min = ('0' + a.getMinutes()).slice(-2);
@@ -79,7 +79,7 @@ class App extends Component {
         sunrise = timeConverter(this.state.weather.list[(window.count - 1)].sunrise);
         sunset = timeConverter(this.state.weather.list[(window.count - 1)].sunset);
       }
-      return (
+      return ( // Renders sunrise and sunset times on the details page
         <div>
             <table className = "sunRiseSet">
                 <tr>

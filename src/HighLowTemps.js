@@ -7,7 +7,7 @@ class App extends Component {
       weather: null
     };
   
-    async componentDidMount() { // To enable variations in temperature according to user's location
+    async componentDidMount() { // Fetches and stores the highest and lowest temps of a given day.
       window.locale = 0;
   
       if ("geolocation" in navigator) {

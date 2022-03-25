@@ -38,7 +38,7 @@ class App extends Component {
     this.setState({ weather: data, loading: false });
   }
 
-  render() {  // to enable the user to switch on the location services
+  render() {
     if (window.locale == 0) {
       return <div>Please enable location services and make sure browser has access to it</div>;
     }
