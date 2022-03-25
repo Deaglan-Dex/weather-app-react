@@ -5,6 +5,8 @@ import {
     useHistory
   } from "react-router-dom";
 
+
+// Allows the user to search for predictions of a chosen date, which will use historical data to calculate average values to show to the user
 export default function HistorySearch() {
     const [day, setDay] = useState("");
     const [month, setMonth] = useState("");

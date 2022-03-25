@@ -7,7 +7,7 @@ import precicon from './precicon2.png'
 import volicon from './volume.png'
 import diricon from './wdirection.png'
 
-
+// Shows further information predictions (cloudiness, humidity, rain volume, wind) on the prediction info page
 class App extends Component {
   state = {
     loading: true,

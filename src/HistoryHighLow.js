@@ -6,6 +6,7 @@ function kelToCel(temp) {
   return newtemp;
 }
 
+// Fetches and displays average highest and lowest temperature of a day that the user searched
 class App extends Component {
   state = {
     loading: true,

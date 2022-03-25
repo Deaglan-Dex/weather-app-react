@@ -1,7 +1,7 @@
 import React from 'react'
 import "./App.css"
 
-export default function HistoryHeader() {
+export default function HistoryHeader() { // Header with explanation to user on what the search page is for
   return (
     <div>
         <p className='sixteentxt'>Weather Prediction</p>
