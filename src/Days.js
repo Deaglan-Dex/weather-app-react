@@ -1,6 +1,5 @@
 import React from 'react'
 import "./App.css"
-import { useState } from 'react'
 import {
     Link
   } from "react-router-dom";
@@ -42,6 +41,8 @@ export default function dayss() {
       <div>
           <div className='line'>
             <Link to="/info?cnt=1">
+                {/* each of the tiles are for today and each of the upcoming 15 days */}
+                {/* when clicked, the user is redirected to the page containing info for that day from the API */}
                 <div className='dateTile'>
                     <p className='day'>{weekdays[`${days[0].getDay()}`]}</p>
                     <p className='datee'>{`${days[0].getDate()}`}</p>

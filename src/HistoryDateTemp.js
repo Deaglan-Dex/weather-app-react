@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import "./detailsPage.css";
 
-function kelToCel(temp) {
+function kelToCel(temp) {  // this function is used to convert temperatures from celsius to kelvin and round those values
   var newtemp = Math.round(temp - 273.15);
   return newtemp;
 }
@@ -85,6 +85,8 @@ class App extends Component {
       console.log(month);
       console.log(day);
       var date = month + " " + day; 
+      
+      // the below code takes the data from the API and runs it through the kelToCel function and displays what is returned.
       var temp = <div className='ahhh'><h1 className = "mainTemp2">average temp<br></br> {kelToCel(this.state.weather.result.temp.mean)}<sup className='super'>&#176;C</sup></h1></div>
       return (
         <div>

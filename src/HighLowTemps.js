@@ -61,6 +61,8 @@ class App extends Component {
         return <div>didn't recieve weather information</div>;
       }
 
+      // based off the parameter Count, the max and min temperatures are accessed from the correct API
+      // it is then assigned to the appropriate variable
       var hightemp = 0;
       var lowtemp = 0;
 

@@ -57,9 +57,12 @@ class App extends Component {
   
       return (
         <div className='circlediv'>
+          {/* the below HTML code is for the circles displayed on various pages */}
             <span className='circles'>
                 <span class="dot">
-                    <img className='precicon' src={cloudicon} alt="precicon" />
+                    {/* these are the icons */}
+                    <img className='precicon' src={cloudicon} alt="precicon" /> 
+                    {/* these are the data taken from the API */}
                     <p className='txt'>{this.state.weather.clouds.all}%</p>
                 </span>
                 <p className='circletxt'>cloudiness</p>

@@ -51,18 +51,24 @@ class App extends Component {
       return <div>didn't recieve weather information</div>;
     }
 
+    // the below variable takes the current temperature from the API and rounds it
+    // it then assigns it to the variable temp
     var temp = Math.round(this.state.weather.main.temp);
 
+    // the below variable takes the icon code from the API and inputs it in the image address URL
+    // it then assigns it to the variable icon
     var icon = "http://openweathermap.org/img/wn/" + this.state.weather.weather[0].icon + "@2x.png";
 
     return (
       <div>
         <div className='tempwrapper'>
             <div className='box'>
+              {/* the below HTML displays the temp with the degrees and ensures its 2 digits */}
               <p className='tempnum'>{('0' + temp).slice(-2)}</p>
               <p className='tempdeg'>°C</p>
             </div>
             <div className='inline'>
+              {/* the below HTML displays the icon and the current weather description from the API */}
               <img className='tempicon' src={icon} alt="cloudicon" />
               <p className='tempdesc'>{this.state.weather.weather[0].main}</p>
             </div>
